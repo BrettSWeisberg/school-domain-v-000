@@ -11,10 +11,10 @@ class School
   end
 
   def add_student(name, grade)
-#  if NEW.count(grade) = 0
-#    NEW << grade
-#    end
-#    NEW[grade] => "#{name}"
+    if roster[grade] == nil
+    roster[grade] = [name]
+  else
+    roster[grade] << name
   end
 
 end
