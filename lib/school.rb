@@ -25,8 +25,9 @@ end
   def sort
     new_sort_roster = {}
     roster.each do |grade, names |
-      new_sort_roster[grade] = names.sort 
-      end
+      new_sort_roster[grade] = names.sort
+      new_sort_roster
+    end
     end
 
 end
